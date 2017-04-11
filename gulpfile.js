@@ -27,7 +27,11 @@ gulp.task('css', function() {
 
 gulp.task('html', function() {
   return gulp.src('src/**/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true,
+      minifyJS: true
+    }))
     .pipe(gulp.dest('dist'));
 })
 
@@ -35,18 +39,6 @@ gulp.task('clean', function () {
     return gulp.src('dist', {read: false})
           .pipe(clean());
 });
-
-gulp.task('profileimg', function() {
-  return gulp.src("src/img/profilepic.jpg")
-  .pipe(imageResize({
-    width: 70,
-    quality: 0.85,
-    samplingFactor:[2, 2],
-    interlace: true,
-    imageMagick: true
-  }))
-  .pipe(gulp.dest('dist/img'));
-})
 
 gulp.task('png', function () {
     return gulp.src('src/**/*.png')
