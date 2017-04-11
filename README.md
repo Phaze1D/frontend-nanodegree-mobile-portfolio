@@ -13,11 +13,12 @@ $ python -m SimpleHTTPServer 8080
 Once those commands are finished, open you browser and goto `localhost:8080`
 
 ### Implementation
-I used gulp to minify all .js, .css and .html files and moved all the files to a dist folder.
 
-I used imageMagick to create optimized all .png and .jpg images
+##### Gulp Optimizations
+Used gulp to minify all .js, .css and .html files and moved all the files to a dist folder. I also used imageMagick to optimize all .png and .jpg images
 
-I optimized the index.html file by first adding a media query on the necessary link tags like so
+##### Index Optimizations
+Optimized the index.html file by first adding a media query on the necessary link tags like so
 
 ```
 <link href="css/print.css" rel="stylesheet" media="print">
@@ -36,6 +37,7 @@ For the google fonts I used google's webfont loader to load fonts asynchronously
 <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 ```
 
+##### Main Optimizations
 For main.js file the main problems that I found were all the force reflow in the changePizzaSizes, determineDx, and updatePositions functions.
 
 In the changePizzaSizes I moved all querySelectorAll and offsetWidth calls before the loop like so
