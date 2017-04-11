@@ -13,6 +13,7 @@ $ python -m SimpleHTTPServer 8080
 Once those commands are finished, open you browser and goto `localhost:8080`
 
 ### Implementation
+These are the implementations that I made to optimize this website. I used the techniques that I learn from Udacity Frontend Nanodegree and tools like gulp and imageMagick to make the site render I fast as possible.
 
 #### Gulp Optimizations
 Used gulp to minify all .js, .css and .html files and moved all the files to a dist folder. I also used imageMagick to optimize all .png and .jpg images
