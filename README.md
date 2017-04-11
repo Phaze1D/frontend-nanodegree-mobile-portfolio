@@ -7,11 +7,16 @@ To get started you need to have [npm](https://www.npmjs.com/) and [gulp](http://
 ```
 $ npm install
 $ gulp build
+$ python -m SimpleHTTPServer 8080
 ```
 
-Once those commands are finished, open the file [dist/index.html](./dist/index.html) in your default browser
+Once those commands are finished, open you browser and goto `localhost:8080`
 
 ### Implementation
+I used gulp to minify all .js, .css and .html files and moved all the files to a dist folder.
+
+I used imageMagick to create optimized all .png and .jpg images
+
 I optimized the index.html file by first adding a media query on the necessary link tags like so
 
 ```
