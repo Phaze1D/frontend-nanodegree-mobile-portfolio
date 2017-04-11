@@ -14,10 +14,10 @@ Once those commands are finished, open you browser and goto `localhost:8080`
 
 ### Implementation
 
-##### Gulp Optimizations
+#### Gulp Optimizations
 Used gulp to minify all .js, .css and .html files and moved all the files to a dist folder. I also used imageMagick to optimize all .png and .jpg images
 
-##### Index Optimizations
+#### Index Optimizations
 Optimized the index.html file by first adding a media query on the necessary link tags like so
 
 ```
@@ -37,7 +37,7 @@ For the google fonts I used google's webfont loader to load fonts asynchronously
 <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 ```
 
-##### Main Optimizations
+#### Main Optimizations
 For main.js file the main problems that I found were all the force reflow in the changePizzaSizes, determineDx, and updatePositions functions.
 
 In the changePizzaSizes I moved all querySelectorAll and offsetWidth calls before the loop like so
