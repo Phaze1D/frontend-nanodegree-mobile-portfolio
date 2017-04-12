@@ -447,6 +447,8 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
+
+    //Refactor code to avoid force reflow
     var pizzas = document.querySelectorAll(".randomPizzaContainer");
     var offsetWidth = pizzas[0].offsetWidth;
     var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
@@ -504,7 +506,7 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
-  var scrollTop = document.body.scrollTop
+  var scrollTop = document.body.scrollTop; //Refactor code to avoid force reflow
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((scrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
