@@ -3,9 +3,10 @@
 
 This Project is focused on implementing good web performance. I was given an intentionally slow website, and I had to find what was causing this bad performance and fix it. The website was slow in 2 different aspects first was the initial loading speed and the second was the animation and rendering speed. I used the skills that I learn to get the following results in [Google's PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) and to create a smooth rendering experience.
 
-| Mobile | Desktop |
+|  Platform | Results  |
 | ------ | ------- |
-| <img src="readme_imgs/mscreenshot.jpg" height="250px"/> | <img src="readme_imgs/mscreenshot.jpg" height="250px"/> |
+| Desktop | <img src="readme_imgs/dscreenshot.jpg" height="250px"/> |
+| Mobile  | <img src="readme_imgs/mscreenshot.jpg" height="250px"/> |
 
 
 ## Getting Started
