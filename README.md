@@ -5,8 +5,8 @@ This Project is focused on implementing good web performance. I was given an int
 
 |  Platform | Results  |
 | ------ | ------- |
-| Desktop | <img src="readme_imgs/dscreenshot.jpg" height="300px"/> |
-| Mobile  | <img src="readme_imgs/mscreenshot.jpg" height="300px"/> |
+| Desktop | <img src="readme_imgs/dscreenshot.jpg" height="350px"/> |
+| Mobile  | <img src="readme_imgs/mscreenshot.jpg" height="350px"/> |
 
 
 ## Getting Started
